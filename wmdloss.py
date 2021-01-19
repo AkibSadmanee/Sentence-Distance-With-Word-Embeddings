@@ -4,5 +4,5 @@ from gensim.models import Word2Vec
 
 model = Word2Vec.load("word2vec_skipgram_dim300_iter35.model")
 
-def meanloss(s1, s2):
+def wmdloss(s1, s2):
     return (1 - model.wmdistance(s1, s2))
